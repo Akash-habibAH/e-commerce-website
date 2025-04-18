@@ -3,19 +3,32 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
 #navBar {
-    background-color: rgb(245, 245, 245);
-    border-bottom: 1px gray;
-    
-    padding: 15px 3px 15px 0px;
+    background-color: rgb(255, 253, 253);
+    border-bottom: 1px solid gray;
+    margin:0vw 8.5vw;
+    padding: 5vh 0vw;
+    text-align: center;
+
 }
-#navBar a{
+#navBar img:nth-of-type(1){
+    float: left;
+}
+#navBar a {
     text-decoration: none;
-    margin: 10px;
+    margin: 1vw;
+    font-size: 1.1rem;
+    color:  hsl(219, 9%, 45%);
 }
-#profileImage{
+
+#navBar img:nth-of-type(2){
+    float: right;
+    margin-left: 2vw;
+}
+#profileImage {
     width: 50px;
     height: auto;
     border-radius: 50%;
+    float: right;
+    margin: -13px 10px 10px 10px;
 }
