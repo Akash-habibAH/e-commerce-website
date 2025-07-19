@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakers Here</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuries.css">
+    <link rel="stylesheet" href="mobileDesign.css">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="navBar">
-        <img src="images/logo.svg" alt="Oops!logo not found!">
-        <a href="#">Collections</a>
-        <a href="#">Men</a>
-        <a href="#">Women</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <img src="images/icon-cart.svg" alt="Oops!image not found!">
-        <img id="profileImage" src="images/profileimg.jpg" alt="Oops!image not found!">
-    </nav>
-
-    <img class="imagesThumbNail" src="images/image-product-1-thumbnail.jpg" alt="Oops!image not found!">
-    <img class="images" src="images/image-product-1.jpg" alt="Oops!image not found!">
-    <img class="imagesThumbNail" src="images/image-product-2-thumbnail.jpg" alt="Oops!image not found!">
-    <img class="images" src="images/image-product-2.jpg" alt="Oops!image not found!">
-    <img class="imagesThumbNail" src="images/image-product-3-thumbnail.jpg" alt="Oops!image not found!">
-    <img class="images" src="images/image-product-3.jpg" alt="Oops!image not found!">
-    <img class="imagesThumbNail" src="images/image-product-4-thumbnail.jpg" alt="Oops!image not found!">
-    <img class="images" src="images/image-product-4.jpg" alt="Oops!image not found!">
-    <div id="informationBox">
-        <p>Sneakers Company</p>
-        <h1>FALL LIMITED EDITION SNEAKERS</h1>
-        <p>These low price sneakers are your perfect casual wear companion.Featuring a durable rubber outer sole,they'll
-            withstand with everything the weather can offer.</p>
-        <p id="currentPrice">$125.00</p#>
-        <p id="percentage">50%</p>
-        <p id="previousPrice">$250.00</p>
-        <div id="cartOption">
-            <img src="images/icon-plus.svg" alt="Oops!Image not found!">
-            <p id="cartedProducts">0</p>
-            <img src="images/icon-minus.svg" alt="Oops!Image not found!">
-        </div>
-        <button><img src="images/icon-cart.svg" alt="">ADD TO CART</button>
-    </div>
+    <header>
+        <nav id="navBar">
+            <img src="images/logo.svg" alt="logo of company">
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <img id="cartImg" src="images/icon-cart.svg" alt="icon cart image">
+            <img id="profileImage" src="images/profileimg.jpg" alt="profile image">
+        </nav>
+    </header>
+    <main>
+        <section id="imagesContainer">
+            <img class="images" src="images/image-product-1.jpg" alt="image of product1">
+            <div class="thumbnailContainer">
+                <img class="imagesThumbNail" src="images/image-product-1-thumbnail.jpg"
+                    alt="thumbnail image of product1">
+                <img class="imagesThumbNail" src="images/image-product-2-thumbnail.jpg"
+                    alt="thumbnail image of product2">
+                <img class="imagesThumbNail" src="images/image-product-3-thumbnail.jpg"
+                    alt="thumbnail image of product3">
+                <img class="imagesThumbNail" src="images/image-product-4-thumbnail.jpg"
+                    alt="thumbnail image of product4">
+            </div> 
+        </section>
+        <section id="informationBox">
+            <h1 id="compName">Sneakers Company</h1>
+            <p id="heading">Fall limited Edition Sneakers</p>
+            <p id="description">These low price sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,they'll with stand with everything the weather can offer.</p>
+            <section class="priceDescription">
+                <p id="currentPrice"><b>$125.00</b></p>
+                <p id="percentage">50%</p>
+            </section>
+            <p id="previousPrice"><del>$250.00</del></p>
+            <section class="buttons">
+                <div id="cartOption">
+                    <img id="plusIcon" src="images/icon-plus.svg" alt="image of plus icon">
+                    <p id="cartedProducts">0</p>
+                    <img id="minusIcon"src="images/icon-minus.svg" alt="image of minus icon">
+                </div>
+                <button id="addCartButton"><img src="images/icon-cart.svg" alt="image of icon cart">Add to cart</button>
+            </section>
+        </section>
+    </main>
 </body>
 <script src="script.js"></script>
 </html>

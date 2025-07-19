@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading{
+            margin-top: 7px;
+            margin-bottom: 7px;
+        }
+        .cartedImageResult {
+            margin: auto;
+            padding: 0 15px 0 15px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            width: 90vw;
+            height: 25vh;
+            box-shadow: 3px 3px 8px hsl(217, 5%, 48%);
+            border-radius: 5px;
+        }
+
+        .cartedImageResult img {
+            height: 50px;
+            width: fit-content;
+            border-radius: 4px;
+        }
+
+        #deleteIcon{
+            height: 20px;
+            width: fit-content;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .info{
+            display: flex;
+            flex-direction: row;
+        }
+        .cartedImageResult button {
+            background-color: hsl(26, 100%, 55%);
+            color: black;
+            border: none;
+            outline: none;
+            width: 80%;
+            padding: 1.2vh;
+            font-weight: 550;
+            border-radius: 5px;
+            margin: auto;
+            margin-bottom: 0;
+            margin-top:15px;
+        }
+        #priceLister{
+            text-align: center;
+        }
+        .cartedImageResult p{
+            margin: 0;
+        }
+        .priceInformation{
+            display: flex;
+            flex-direction: column;
+            row-gap: 2px;
+            padding: 5px;
+            padding-bottom: 0;
+            text-align: center;
+            margin: auto;
+        }
+        .priceInformation p:nth-of-type(1){
+            font-size:80%;
+            font-weight: 600;
+        }
+        #items{
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cartedImageResult">
+        <p id="heading"><b>CART</b></p>
+        <div class="info">
+            <img src="images/image-product-1.jpg" alt="image of product">
+            <div class="priceInformation">
+                <p>FALL EDITION SNEAKERS</p>
+                <p id="priceLister">total price X <b id="items">selected</b></p>
+            </div>
+            <img id="deleteIcon" src="images/icon-delete.svg" alt="image of previous button">
+        </div>
+        <button>Checkout</button>
+    </div>
+</body>
+
+</html>

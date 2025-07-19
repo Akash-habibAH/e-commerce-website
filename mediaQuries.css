@@ -1,0 +1,216 @@
+/* media quries */
+@media (max-width:930px) and (min-width:740px) {
+    #navBar {
+        margin: 3vh 5vw;
+        padding: 6vh 1vw;
+        text-align: center;
+    }
+
+    #navBar a {
+        padding: 1vw 1vw 0.1vw 1vw;
+        font-size: 1rem;
+    }
+
+    #navBar a:hover {
+        margin: 0.75vw;
+    }
+
+    #profileImage {
+        width: 4rem;
+        margin: -1.9rem 0.6rem 1rem 1rem;
+    }
+
+    #cartImg {
+        width: 2.3rem;
+    }
+
+    main {
+        margin-top: 1.7rem;
+    }
+
+    #imagesContainer {
+        margin: 0vh 5vw;
+    }
+
+    .images {
+        display: block;
+        width: fit-content;
+        transform: translate(12.5%);
+        height: 40vh;
+        border-radius: 3vh;
+        margin: 5vh 2vw;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .imagesThumbNail {
+        height: 15vh;
+        border-radius: 0.3rem;
+        width: fit-content;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .imagesThumbNail {
+        height: 12vh;
+    }
+
+    .images:hover {
+        height: 42vh;
+        transform: translate(11%);
+        transition: all 0.25s ease-in-out;
+    }
+
+    #informationBox {
+        margin: 8vh 7vw;
+        margin-left: 0;
+        width: 43vw;
+    }
+
+    .buttons {
+        margin-top: 1.5vh;
+    }
+
+    #addCartButton {
+        padding: 0.3rem 1.7rem;
+    }
+
+    #addCartButton:focus {
+        padding: 0.75rem 2rem;
+        margin-top: -3px;
+    }
+
+}
+
+@media (max-width:739px) and (min-width:550px) {
+    #navBar a {
+        padding-right: 3px;
+        font-size: 0.9rem;
+    }
+
+    #navBar {
+        margin: 3vh 2vw;
+        padding: 6vh 1vw;
+        text-align: center;
+    }
+
+    #profileImage {
+        width: 3.3rem;
+        margin: -1rem 0 0.3rem 0;
+    }
+
+    #profileImage:hover {
+        margin: -1rem 0 0.3rem 0;
+    }
+
+    #cartImg {
+        width: 25px;
+        margin-left: 1vw;
+        margin-top: 0;
+
+    }
+
+    #navBar img:nth-of-type(1) {
+        width: 100px;
+    }
+
+    #navBar a:hover {
+        text-decoration: none;
+        margin: 1vw;
+        padding: 0;
+        font-size: 0.9rem;
+        border-bottom: none;
+        border-radius: none;
+        color: hsl(220, 13%, 13%);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    #informationBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #imagesContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 0vh 4vw;
+        margin-right: 0;
+        justify-content: space-between;
+    }
+
+    .imagesThumbNail {
+        height: 13vh;
+    }
+
+    .thumbnailContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 0.3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .images {
+        height: 33vh;
+        margin: 0;
+    }
+
+    .images:hover {
+        height: 37vh;
+        transition: all 0.25s ease-in-out;
+    }
+
+    #informationBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        padding: 0;
+        margin: 2rem auto;
+
+    }
+
+    #description {
+        margin-top: 0;
+    }
+
+    #percentage {
+        margin: 0.5rem;
+        margin-top: 0;
+
+    }
+
+    #currentPrice {
+        margin: 0.5rem;
+        margin-top: 0.25rem;
+    }
+
+    .buttons {
+        margin-top: 1.5vh;
+        width: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    #addCartButton {
+        padding: 0.5rem 2.5rem;
+
+    }
+
+    #addCartButton:focus {
+        padding: 1.05rem 2.8rem;
+        margin-top: -3px;
+    }
+}
+
+@media (max-width:549px) and (min-width:376px) {
+    
+}

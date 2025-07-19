@@ -2,33 +2,240 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kumbh Sans';
 }
+
+/* navbar */
 #navBar {
     background-color: rgb(255, 253, 253);
     border-bottom: 1px solid gray;
-    margin:0vw 8.5vw;
-    padding: 5vh 0vw;
+    margin: 3vh 8.5vw;
+    padding: 6vh 2vw;
     text-align: center;
-
 }
-#navBar img:nth-of-type(1){
+
+#navBar img:nth-of-type(1) {
     float: left;
 }
+
 #navBar a {
     text-decoration: none;
-    margin: 1vw;
+    padding: 1vw 1vw 2.5vw 1vw;
     font-size: 1.1rem;
-    color:  hsl(219, 9%, 45%);
+    color: hsl(219, 9%, 45%);
 }
 
-#navBar img:nth-of-type(2){
-    float: right;
-    margin-left: 2vw;
+#navBar a:hover {
+    margin: 1vw;
+    font-size: 1.1rem;
+    color: hsl(219, 9%, 45%);
+    border-bottom: 2px solid rgb(197, 30, 30);
+    border-radius: 2px;
 }
+
 #profileImage {
-    width: 50px;
+    width: 4.8rem;
     height: auto;
     border-radius: 50%;
     float: right;
-    margin: -13px 10px 10px 10px;
+    margin: -1.9rem 0.6rem 1rem 1rem;
+}
+#profileImage:hover {
+    margin: -2rem 0.5rem 1rem 1rem;
+    cursor: pointer;
+    border: 3px solid  hsl(26, 100%, 55%);
+}
+#cartImg {
+    float: right;
+    margin-left: 2vw;
+    width: 2.6rem;
+    margin-top: -1vh;
+}
+
+#cartImg:hover{
+    cursor: pointer;
+}
+
+/* body */
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+#imagesContainer{
+    margin-left: 7.5vw;
+    margin-right: 0;
+}
+
+.images {
+    display: block;
+    width: fit-content;
+    height: 45vh;
+    border-radius: 3vh;
+    margin: 5vh auto;
+    transform: translate(5%);
+    transition: all 0.25s ease-in-out;
+}
+
+.imagesThumbNail {
+    height: 15vh;
+    border-radius: 0.3rem;
+    width: fit-content;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.imagesThumbNail:hover {
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+    /* yaa donoo properties tab laganii haan jub user kise aik per bhi hover kar chukaa hoo orr hover kartay waqat image per yaa color laganaa haa */
+    background-color: hsl(25, 100%, 94%);
+    border: 2px solid  hsl(26, 100%, 55%);
+}
+
+.images:hover {
+    height: 47vh;
+    transform: translate(4%);
+    transition: all 0.35s ease-in-out;
+}
+
+#informationBox {
+    display: flex;
+    flex-direction: column;
+    width: 36vw;
+    margin: 11vh 9vw;
+    flex-wrap: nowrap;
+}
+
+#heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    margin-top: 1rem;
+}
+
+#compName {
+    color: hsl(219, 9%, 45%);
+    text-overflow: "-";
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+
+.priceDescription {
+    display: flex;
+    flex-direction: row;
+    gap: 0.52rem;
+}
+
+#currentPrice {
+    margin-top: 1.45rem;
+}
+
+#previousPrice {
+    margin: 0px;
+}
+
+#percentage {
+    background-color: black;
+    color: white;
+    padding: 0.3rem 0.47rem;
+    border-radius: 4px;
+    font-weight: 450;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    margin-top: 1.5vh;
+}
+
+#cartOption {
+    background-color: hsl(223, 64%, 98%);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: 1.85rem;
+    width: 8.2rem;
+    padding: 0.55rem;
+    border-radius: 0.35rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+#cartedProducts {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+#cartOption img {
+    margin: 1rem;
+}
+
+#cartOption img:hover {
+    cursor: pointer;
+    color: black;
+}
+
+#addCartButton img {
+    margin: 0.2rem 0.75rem;
+    margin-bottom: -4px;
+    margin-left: 0;
+}
+
+#addCartButton {
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+    border-radius: 0.27rem;
+    padding: 0.35rem 2.3rem;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    font-weight: 600;
+}
+
+#addCartButton:hover {
+    cursor: pointer;
+}
+
+#addCartButton:focus {
+    cursor: pointer;
+    background-color: hsl(26, 100%, 71%);
+    padding: 1rem 2.5rem;
+    margin-top: -3px;
+    transition: all 0.5s ease-in-out;
+
+}
+/* style when click on cart image  */
+.cartedImageResult {
+    position: absolute;
+    top: 7rem;
+    right: 2.75rem;
+    background-color: white;
+    box-sizing: border-box;
+    width: 17rem;
+    height: 33vh;
+    justify-content: center;
+    box-shadow: 2px 2px 1rem hsl(214, 6%, 53%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    border-radius: 7px;
+}
+
+.cartedImageResult p:nth-child(1) {
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+    padding: 2.5vh 2vw 3.5vh 2vw;
+    margin: 0;
+}
+
+.cartedImageResult p:nth-child(2) {
+    text-align: center;
+    margin: auto;
+    color: hsl(219, 9%, 45%);
+    font-weight: 550;
 }
