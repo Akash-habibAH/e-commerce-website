@@ -6,8 +6,8 @@ let accessHead = document.querySelector("head");
 let cartImage = document.getElementById("cartImg");
 let menuButton = document.getElementById("menuImg");
 
-// styling will apply on less than 375px width 
-if (window.matchMedia("(max-width:375px)").matches) {
+// styling will apply on less than 419px width 
+if (window.matchMedia("(max-width:419px)").matches) {
     // navbar html in mobile size
     navBarElement.innerHTML = `<img id="menuImg" src = "images/icon-menu.svg" alt = "icon cart image">
             <img id="logoImg" src="images/logo.svg" alt="logo of company">
@@ -145,7 +145,7 @@ cartImage.addEventListener("click", () => {
     if (showInfoOfCart.style.display === "none") {
         showInfoOfCart.style.display = "flex";
         showInfoOfCart.style.transition = " all 0.3s ease-in-out";
-
+ 
     } else {
         showInfoOfCart.style.display = "none";
         showInfoOfCart.style.transition = " all 0.3s ease-in-out";

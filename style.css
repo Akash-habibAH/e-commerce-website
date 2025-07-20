@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Kumbh Sans';
 }
 
@@ -27,7 +27,6 @@ body {
 
 #navBar a:hover {
     margin: 1vw;
-    font-size: 1.1rem;
     color: hsl(219, 9%, 45%);
     border-bottom: 2px solid rgb(197, 30, 30);
     border-radius: 2px;
@@ -40,11 +39,13 @@ body {
     float: right;
     margin: -1.9rem 0.6rem 1rem 1rem;
 }
+
 #profileImage:hover {
     margin: -2rem 0.5rem 1rem 1rem;
     cursor: pointer;
-    border: 3px solid  hsl(26, 100%, 55%);
+    border: 3px solid hsl(26, 100%, 55%);
 }
+
 #cartImg {
     float: right;
     margin-left: 2vw;
@@ -52,7 +53,7 @@ body {
     margin-top: -1vh;
 }
 
-#cartImg:hover{
+#cartImg:hover {
     cursor: pointer;
 }
 
@@ -64,7 +65,7 @@ main {
     margin-top: 2rem;
 }
 
-#imagesContainer{
+#imagesContainer {
     margin-left: 7.5vw;
     margin-right: 0;
 }
@@ -84,7 +85,6 @@ main {
     border-radius: 0.3rem;
     width: fit-content;
     transition: all 0.2s ease-in-out;
-
 }
 
 .imagesThumbNail:hover {
@@ -93,7 +93,7 @@ main {
     transition: all 0.35s ease-in-out;
     /* yaa donoo properties tab laganii haan jub user kise aik per bhi hover kar chukaa hoo orr hover kartay waqat image per yaa color laganaa haa */
     background-color: hsl(25, 100%, 94%);
-    border: 2px solid  hsl(26, 100%, 55%);
+    border: 2px solid hsl(26, 100%, 55%);
 }
 
 .images:hover {
@@ -111,7 +111,7 @@ main {
 }
 
 #heading {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
     margin-top: 1rem;
@@ -200,6 +200,7 @@ main {
 
 #addCartButton:hover {
     cursor: pointer;
+    background-color: hsl(26, 100%, 71%);
 }
 
 #addCartButton:focus {
@@ -210,6 +211,7 @@ main {
     transition: all 0.5s ease-in-out;
 
 }
+
 /* style when click on cart image  */
 .cartedImageResult {
     position: absolute;

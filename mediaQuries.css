@@ -211,6 +211,91 @@
     }
 }
 
-@media (max-width:549px) and (min-width:376px) {
-    
+@media (max-width:549px) and (min-width:420px) {
+    #navBar {
+        margin: 2vh 0vw;
+        padding: 2.5vh 2vw 4vh 2vw;
+        text-align: left;
+    }
+
+    #navBar a {
+        font-size: 0.9rem;
+        padding: 3vw;
+        padding-right: 0;
+    }
+
+    #navBar a:hover {
+        margin: 0;
+    }
+
+    #navBar img:nth-of-type(1) {
+        width: 18vw;
+        margin-top: 3px;
+        margin-right: 0;
+    }
+
+    #profileImage,
+    #profileImage:hover {
+        width: 10vw;
+        margin: -3vw 1rem 1.2rem 1rem;
+        border: none;
+    }
+
+    #cartImg {
+        margin-left: 1vw;
+        margin-top: -0.2rem;
+        width: 6vw;
+    }
+
+    .hiddenElements {
+        display: none;
+    }
+
+    /* main */
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    #informationBox {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 5vh 5vw;
+    }
+
+    #imagesContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        margin-right: 0;
+        justify-content: space-between;
+    }
+
+    .images,
+    .images:hover {
+        height: 38vh;
+        margin:4vh 2vw;
+    }
+
+    .imagesThumbNail {
+        height: 13vh;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .thumbnailContainer {
+        width: 40vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5vw;
+        /* justify-content: center; */
+        align-items: center;
+        margin:auto;
+    }
+    .buttons {
+        justify-content: space-evenly;
+}
 }
