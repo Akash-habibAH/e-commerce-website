@@ -116,6 +116,10 @@ main {
     margin-bottom: 0.75rem;
     margin-top: 1rem;
 }
+#description{
+    color: hsl(219, 9%, 45%);
+    text-align: left;
+}
 
 #compName {
     color: hsl(219, 9%, 45%);
